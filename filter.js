@@ -68,3 +68,8 @@ const hasStrongSkills = student => strongSkills = student.skills.filter(hasFiveY
 const candidates1 = students.filter(hasStrongSkills)
 // to return just names using map function rather than the whole oject use map on console.log
 console.log(candidates1.map(student => [student.name, student.id]))
+
+//modal solution
+
+const topMaths = students.filter(itm => itm.results.maths >= 90);
+console.log(topMaths);
